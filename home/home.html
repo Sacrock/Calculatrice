@@ -1,0 +1,28 @@
+<div ng-controller="HomeController">
+
+    <p>Lets calculate</p>
+    <hr/>
+    <label> Opérande 1</label>
+    <input type="number" ng-model="op1">
+    <br/>
+    <label> Opérande 2</label>
+    <input type="number" ng-model="op2">
+
+    <br>
+    <label> Opérande</label>
+    <br>
+    <input type="radio" ng-model="operator" value="add">
+    <label>Add</label>
+    <input type="radio" ng-model="operator" value="sub">
+    <label>Sub</label>
+    <input type="radio" ng-model="operator" value="mul">
+    <label>Mul</label>
+    <input type="radio" ng-model="operator" value="div">
+    <label>Div</label>
+
+    <button ng-click="doRequest()">Calculate !</button>
+    <br>
+    <label>Result :</label>
+    <input type="text" ng-model="result">
+
+</div>
